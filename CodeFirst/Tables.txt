@@ -1,0 +1,37 @@
+﻿
+-AppUser
+
+-AppUserDetail
+
+-Product
+
+-Category 
+
+-Order
+
+-OrderDetail (bunu çoka çok ilişkiyi one to many e çevirmek için kullandık)
+
+
+
+---------------------------------------
+     (one-to-one) 
+-AppUser -AppUserDetail
+
+
+
+  (one-to-many)
+-AppUser  -Order
+
+-Category -Product 
+
+-Product -OrderDetail
+
+-Order -OrderDetail
+
+
+
+(many-to-many)
+
+bunun için çoka çok bir tabloya ihtiyaç duyuyoruz) bunu bu şekilde ifade edemiyoruz o yüzden de OrderDetail classono oluşturduk
+
+-Product -Order
